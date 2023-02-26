@@ -1,0 +1,158 @@
+Warning: Some of the feature names have been changed automatically to be compatible with SavedModels because fix_feature_names=True.
+Warning: Some of the feature names have been changed automatically to be compatible with SavedModels because fix_feature_names=True.
+Use /var/folders/1w/ck_kk2q1065f61m2p6207m4h0000gn/T/tmpny0_5f6q as temporary training directory
+Reading training dataset...
+Training dataset read in 0:00:05.292100. Found 116 examples.
+Training model...
+Model trained in 0:00:00.106319
+Compiling model...
+Model compiled.
+Model: "random_forest_model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+=================================================================
+Total params: 1
+Trainable params: 0
+Non-trainable params: 1
+_________________________________________________________________
+Type: "RANDOM_FOREST"
+Task: CLASSIFICATION
+Label: "__LABEL"
+
+Input Features (2):
+	Unnamed:_0
+	inflation
+
+No weights
+
+Variable Importance: MEAN_MIN_DEPTH:
+    1.  "inflation"  4.490737 ################
+    2.    "__LABEL"  4.490737 ################
+    3. "Unnamed:_0"  0.000000 
+
+Variable Importance: NUM_AS_ROOT:
+    1. "Unnamed:_0" 300.000000 
+
+Variable Importance: NUM_NODES:
+    1. "Unnamed:_0" 4880.000000 
+
+Variable Importance: SUM_SCORE:
+    1. "Unnamed:_0" 59347.698138 
+
+
+
+Winner take all: true
+Out-of-bag evaluation: accuracy:0 logloss:35.7736
+Number of trees: 300
+Total number of nodes: 10060
+
+Number of nodes by tree:
+Count: 300 Average: 33.5333 StdDev: 2.21108
+Min: 27 Max: 39 Ignored: 0
+----------------------------------------------
+[ 27, 28)   2   0.67%   0.67%
+[ 28, 29)   0   0.00%   0.67%
+[ 29, 30)  13   4.33%   5.00% #
+[ 30, 31)   0   0.00%   5.00%
+[ 31, 32)  54  18.00%  23.00% #####
+[ 32, 33)   0   0.00%  23.00%
+[ 33, 34) 108  36.00%  59.00% ##########
+[ 34, 35)   0   0.00%  59.00%
+[ 35, 36)  86  28.67%  87.67% ########
+[ 36, 37)   0   0.00%  87.67%
+[ 37, 38)  31  10.33%  98.00% ###
+[ 38, 39)   0   0.00%  98.00%
+[ 39, 39]   6   2.00% 100.00% #
+
+Depth by leafs:
+Count: 5180 Average: 4.49556 StdDev: 1.07776
+Min: 2 Max: 8 Ignored: 0
+----------------------------------------------
+[ 2, 3)  109   2.10%   2.10% #
+[ 3, 4)  794  15.33%  17.43% ####
+[ 4, 5) 1771  34.19%  51.62% ##########
+[ 5, 6) 1590  30.69%  82.32% #########
+[ 6, 7)  769  14.85%  97.16% ####
+[ 7, 8)  137   2.64%  99.81% #
+[ 8, 8]   10   0.19% 100.00%
+
+Number of training obs by leaf:
+Count: 5180 Average: 6.71815 StdDev: 1.48574
+Min: 5 Max: 13 Ignored: 0
+----------------------------------------------
+[  5,  6) 1307  25.23%  25.23% ##########
+[  6,  7) 1373  26.51%  51.74% ##########
+[  7,  8) 1020  19.69%  71.43% #######
+[  8,  9)  685  13.22%  84.65% #####
+[  9, 10)  594  11.47%  96.12% ####
+[ 10, 11)  158   3.05%  99.17% #
+[ 11, 12)   36   0.69%  99.86%
+[ 12, 13)    6   0.12%  99.98%
+[ 13, 13]    1   0.02% 100.00%
+
+Attribute in nodes:
+	4880 : Unnamed:_0 [NUMERICAL]
+
+Attribute in nodes with depth <= 0:
+	300 : Unnamed:_0 [NUMERICAL]
+
+Attribute in nodes with depth <= 1:
+	900 : Unnamed:_0 [NUMERICAL]
+
+Attribute in nodes with depth <= 2:
+	1991 : Unnamed:_0 [NUMERICAL]
+
+Attribute in nodes with depth <= 3:
+	3379 : Unnamed:_0 [NUMERICAL]
+
+Attribute in nodes with depth <= 5:
+	4804 : Unnamed:_0 [NUMERICAL]
+
+Condition type in nodes:
+	4880 : HigherCondition
+Condition type in nodes with depth <= 0:
+	300 : HigherCondition
+Condition type in nodes with depth <= 1:
+	900 : HigherCondition
+Condition type in nodes with depth <= 2:
+	1991 : HigherCondition
+Condition type in nodes with depth <= 3:
+	3379 : HigherCondition
+Condition type in nodes with depth <= 5:
+	4804 : HigherCondition
+Node format: NOT_SET
+
+Training OOB:
+	trees: 1, Out-of-bag evaluation: accuracy:0 logloss:36.0437
+	trees: 11, Out-of-bag evaluation: accuracy:0 logloss:35.7468
+	trees: 21, Out-of-bag evaluation: accuracy:0 logloss:35.7519
+	trees: 31, Out-of-bag evaluation: accuracy:0 logloss:35.7544
+	trees: 41, Out-of-bag evaluation: accuracy:0 logloss:35.7557
+	trees: 51, Out-of-bag evaluation: accuracy:0 logloss:35.7588
+	trees: 61, Out-of-bag evaluation: accuracy:0 logloss:35.7592
+	trees: 71, Out-of-bag evaluation: accuracy:0 logloss:35.7607
+	trees: 81, Out-of-bag evaluation: accuracy:0 logloss:35.761
+	trees: 91, Out-of-bag evaluation: accuracy:0 logloss:35.7617
+	trees: 101, Out-of-bag evaluation: accuracy:0 logloss:35.7628
+	trees: 111, Out-of-bag evaluation: accuracy:0 logloss:35.7643
+	trees: 121, Out-of-bag evaluation: accuracy:0 logloss:35.7649
+	trees: 131, Out-of-bag evaluation: accuracy:0 logloss:35.7661
+	trees: 141, Out-of-bag evaluation: accuracy:0 logloss:35.7663
+	trees: 151, Out-of-bag evaluation: accuracy:0 logloss:35.767
+	trees: 161, Out-of-bag evaluation: accuracy:0 logloss:35.7678
+	trees: 171, Out-of-bag evaluation: accuracy:0 logloss:35.7684
+	trees: 181, Out-of-bag evaluation: accuracy:0 logloss:35.7688
+	trees: 191, Out-of-bag evaluation: accuracy:0 logloss:35.769
+	trees: 201, Out-of-bag evaluation: accuracy:0 logloss:35.7698
+	trees: 211, Out-of-bag evaluation: accuracy:0 logloss:35.7704
+	trees: 221, Out-of-bag evaluation: accuracy:0 logloss:35.7709
+	trees: 231, Out-of-bag evaluation: accuracy:0 logloss:35.7714
+	trees: 241, Out-of-bag evaluation: accuracy:0 logloss:35.7716
+	trees: 251, Out-of-bag evaluation: accuracy:0 logloss:35.7721
+	trees: 261, Out-of-bag evaluation: accuracy:0 logloss:35.7726
+	trees: 271, Out-of-bag evaluation: accuracy:0 logloss:35.7729
+	trees: 281, Out-of-bag evaluation: accuracy:0 logloss:35.7731
+	trees: 291, Out-of-bag evaluation: accuracy:0 logloss:35.7733
+	trees: 300, Out-of-bag evaluation: accuracy:0 logloss:35.7736
+
